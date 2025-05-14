@@ -2,31 +2,15 @@
 
 ![Bash](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash)
 ![Arch Linux](https://img.shields.io/badge/OS-Arch_Linux-1793D1?logo=arch-linux)
-![Hyprland](https://img.shields.io/badge/WM-Hyprland-4455BB)
-
-Uno script Bash completo per configurare Hyprland su Arch Linux con interfaccia utente intuitiva e colorata.
 
 ## 📋 Panoramica
 
 Questo script automatizza l'installazione e la configurazione di:
-- Hyprland (compositor Wayland)
-- Tutti i pacchetti essenziali
+- Hyprland
+- Pacchetti essenziali
 - Driver GPU specifici
 - Display manager a scelta
 - Configurazioni predefinite
-
-## 🛠️ Funzionalità principali
-
-1. **Installazione automatica di yay** (AUR helper)
-2. **Configurazione completa di Hyprland**
-3. **Supporto per hardware diverso**:
-   - PC fissi e portatili
-   - GPU AMD/Intel/NVIDIA
-4. **Download configurazioni** da repository GitHub
-5. **Interfaccia utente intuitiva** con:
-   - Menu interattivi
-   - Messaggi colorati
-   - Feedback visivo
 
 ## 📦 Pacchetti installati
 
