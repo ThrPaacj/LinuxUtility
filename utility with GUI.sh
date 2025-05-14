@@ -134,7 +134,7 @@ install_dependencies() {
         otf-font-awesome curl foot nemo nemo-image-converter nemo-fileroller
         mpv imv pamixer xdg-user-dirs polkit-gnome trash-cli gvfs nwg-look
         nwg-displays bash-completion zoxide papirus-icon-theme tofi
-        telegram-desktop spotify-launcher btop
+        telegram-desktop spotify-launcher btop uwsm
     )
     
     if ! yay -S --noconfirm "${base_packages[@]}"; then
