@@ -127,7 +127,7 @@ install_dependencies() {
     # Installazione pacchetti base
     info_msg "Installazione pacchetti base di Hyprland..."
     local base_packages=(
-        hyprland hyprpaper hyprlock waybar fastfetch speedtest-cli
+        hyprland firefox hyprpaper hyprlock waybar fastfetch speedtest-cli
         xdg-desktop-portal-hyprland xdg-utils wl-clipboard kitty micro
         network-manager-applet grim slurp mako visual-studio-code-bin
         vesktop-bin rustdesk-bin ttf-jetbrains-mono ttf-jetbrains-mono-nerd
