@@ -137,7 +137,7 @@ install_dependencies() {
         telegram-desktop spotify-launcher btop uwsm
     )
     
-    if ! yay -S --noconfirm "${base_packages[@]}"; then
+    if ! yay -S --noconfirm --needed "${base_packages[@]}"; then
         error_msg "Fallita installazione pacchetti base!"
         return 1
     fi
@@ -149,7 +149,7 @@ install_dependencies() {
             brightnessctl batsignal hypridle blueman wlsunset
         )
         
-        if ! yay -S --noconfirm "${laptop_packages[@]}"; then
+        if ! yay -S --noconfirm --needed "${laptop_packages[@]}"; then
             error_msg "Fallita installazione pacchetti portatile!"
             return 1
         fi
@@ -271,7 +271,7 @@ update_environment() {
     done
     echo -e "${RC}"
     
-    if ! yay -S --noconfirm "${packages[@]}"; then
+    if ! yay -S --noconfirm --needed "${packages[@]}"; then
         error_msg "Fallita installazione driver GPU!"
         return 1
     fi
