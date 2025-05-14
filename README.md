@@ -1,40 +1,41 @@
-# Hyprland Configuration Tool
+# Hyprland Configuration Tool  
 
-![Bash](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash)
-![Arch Linux](https://img.shields.io/badge/OS-Arch_Linux-1793D1?logo=arch-linux)
+![Bash](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash)  
+![Arch Linux](https://img.shields.io/badge/OS-Arch_Linux-1793D1?logo=arch-linux)  
 
-## 📋 Panoramica
+## 📋 Overview  
 
-Questo script automatizza l'installazione e la configurazione di:
-- Hyprland
-- Pacchetti essenziali
-- Driver GPU specifici
-- Display manager a scelta
-- Configurazioni predefinite
+This script automates the installation and configuration of:  
+- Hyprland (Wayland compositor)  
+- Essential packages  
+- GPU-specific drivers  
+- Display manager (optional)  
+- Predefined configurations  
 
-## 📦 Pacchetti installati
+## 📦 Installed Packages  
 
-### 🧰 Pacchetti base
+### 🧰 Base Packages (via pacman)  
 ```plaintext
-hyprland firefox hyprpaper hyprlock waybar fastfetch speedtest-cli
-xdg-desktop-portal-hyprland xdg-utils wl-clipboard kitty micro
-network-manager-applet grim slurp mako ttf-jetbrains-mono ttf-jetbrains-mono-nerd
-otf-font-awesome curl foot nemo nemo-image-converter nemo-fileroller
-mpv imv pamixer xdg-user-dirs polkit-gnome trash-cli gvfs nwg-look
-nwg-displays bash-completion zoxide papirus-icon-theme telegram-desktop
-spotify-launcher btop uwsm pavucontrol
-```
-### 🧰 Pacchetti installati con YAY
-```plaintext
-visual-studio-code-bin vesktop-bin rustdesk-bin tofi
+hyprland firefox hyprpaper hyprlock waybar fastfetch speedtest-cli  
+xdg-desktop-portal-hyprland xdg-utils wl-clipboard kitty micro  
+network-manager-applet grim slurp mako ttf-jetbrains-mono ttf-jetbrains-mono-nerd  
+otf-font-awesome curl foot nemo nemo-image-converter nemo-fileroller  
+mpv imv pamixer xdg-user-dirs polkit-gnome trash-cli gvfs nwg-look  
+nwg-displays bash-completion zoxide papirus-icon-theme telegram-desktop  
+spotify-launcher btop uwsm pavucontrol  
 ```
 
-### 💻 Pacchetti aggiuntivi per portatili
+### 🧰 AUR Packages (via yay)  
 ```plaintext
-brightnessctl batsignal hypridle blueman wlsunset
-```
+visual-studio-code-bin vesktop-bin rustdesk-bin tofi  
+```  
 
-### 🖥️ Display Manager (a scelta)
+### 💻 Laptop-Specific Packages  
 ```plaintext
-GDM | SDDM | LY
-```
+brightnessctl batsignal hypridle blueman wlsunset  
+```  
+
+### 🖥️ Display Manager Options  
+```plaintext
+GDM | SDDM | LY  
+```  
