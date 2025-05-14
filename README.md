@@ -14,16 +14,19 @@ Questo script automatizza l'installazione e la configurazione di:
 
 ## 📦 Pacchetti installati
 
-### 🧰 Pacchetti base (installati sempre)
+### 🧰 Pacchetti base
 ```plaintext
 hyprland firefox hyprpaper hyprlock waybar fastfetch speedtest-cli
 xdg-desktop-portal-hyprland xdg-utils wl-clipboard kitty micro
-network-manager-applet grim slurp mako visual-studio-code-bin
-vesktop-bin rustdesk-bin ttf-jetbrains-mono ttf-jetbrains-mono-nerd
+network-manager-applet grim slurp mako ttf-jetbrains-mono ttf-jetbrains-mono-nerd
 otf-font-awesome curl foot nemo nemo-image-converter nemo-fileroller
 mpv imv pamixer xdg-user-dirs polkit-gnome trash-cli gvfs nwg-look
-nwg-displays bash-completion zoxide papirus-icon-theme tofi
-telegram-desktop spotify-launcher btop uwsm pavucontrol
+nwg-displays bash-completion zoxide papirus-icon-theme telegram-desktop
+spotify-launcher btop uwsm pavucontrol
+```
+### 🧰 Pacchetti installati con YAY
+```plaintext
+visual-studio-code-bin vesktop-bin rustdesk-bin tofi
 ```
 
 ### 💻 Pacchetti aggiuntivi per portatili
@@ -33,5 +36,5 @@ brightnessctl batsignal hypridle blueman wlsunset
 
 ### 🖥️ Display Manager (a scelta)
 ```plaintext
-GDM | SDDM | LY | Nessuno
+GDM | SDDM | LY
 ```
