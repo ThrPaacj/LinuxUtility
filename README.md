@@ -6,11 +6,11 @@
 ## 📋 Overview  
 
 This script automates the installation and configuration of:  
-- Hyprland (Wayland compositor)  
+- Hyprland
 - Essential packages  
 - GPU-specific drivers  
-- Display manager (optional)  
-- Predefined configurations  
+- Display manager 
+- Dots from Github
 
 ## 📦 Installed Packages  
 
