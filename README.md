@@ -1,7 +1,6 @@
 # Hyprland Configuration Tool  
 
-![Bash](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash)  
-![Arch Linux](https://img.shields.io/badge/OS-Arch_Linux-1793D1?logo=arch-linux)  
+![Bash](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash)  ![Arch Linux](https://img.shields.io/badge/OS-Arch_Linux-1793D1?logo=arch-linux)  
 
 ## 📋 Overview  
 
