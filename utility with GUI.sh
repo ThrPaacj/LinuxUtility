@@ -127,17 +127,17 @@ install_dependencies() {
     # Installazione pacchetti base
     info_msg "Installazione pacchetti base di Hyprland..."
     local base_packages=(
-        hyprland hyprpaper hyprlock waybar fastfetch speedtest-cli
+        hyprland firefox hyprpaper hyprlock waybar fastfetch speedtest-cli
         xdg-desktop-portal-hyprland xdg-utils wl-clipboard kitty micro
         network-manager-applet grim slurp mako visual-studio-code-bin
         vesktop-bin rustdesk-bin ttf-jetbrains-mono ttf-jetbrains-mono-nerd
         otf-font-awesome curl foot nemo nemo-image-converter nemo-fileroller
         mpv imv pamixer xdg-user-dirs polkit-gnome trash-cli gvfs nwg-look
         nwg-displays bash-completion zoxide papirus-icon-theme tofi
-        telegram-desktop spotify-launcher btop uwsm
+        telegram-desktop spotify-launcher btop uwsm pavucontrol
     )
     
-    if ! yay -S --noconfirm "${base_packages[@]}"; then
+    if ! yay -S --noconfirm --needed "${base_packages[@]}"; then
         error_msg "Fallita installazione pacchetti base!"
         return 1
     fi
@@ -149,7 +149,7 @@ install_dependencies() {
             brightnessctl batsignal hypridle blueman wlsunset
         )
         
-        if ! yay -S --noconfirm "${laptop_packages[@]}"; then
+        if ! yay -S --noconfirm --needed "${laptop_packages[@]}"; then
             error_msg "Fallita installazione pacchetti portatile!"
             return 1
         fi
@@ -271,7 +271,7 @@ update_environment() {
     done
     echo -e "${RC}"
     
-    if ! yay -S --noconfirm "${packages[@]}"; then
+    if ! yay -S --noconfirm --needed "${packages[@]}"; then
         error_msg "Fallita installazione driver GPU!"
         return 1
     fi
