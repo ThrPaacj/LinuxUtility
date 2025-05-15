@@ -203,10 +203,12 @@ download_github() {
         case $autore in
             "Nicola")
                 REPO_URL="https://github.com/TheShotMan05/dots"
+                sudo cp -r bashrc/.bashrc_nicola ~/.bashrc
                 break
                 ;;
             "Luca")
                 REPO_URL="https://github.com/ThrPaacj/dots"
+                sudo cp -r bashrc/.bashrc_luca ~/.bashrc
                 break
                 ;;
             "Annulla")

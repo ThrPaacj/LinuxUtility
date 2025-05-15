@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+	. /usr/share/bash-completion/bash_completion
+elif [ -f /etc/bash_completion ]; then
+	. /etc/bash_completion
+fi
+
+PS1='[\u@\h \w]\$ '
+
+alias ls='ls -Fh --color=auto'
+alias ll='ls -aFls'            
+
+alias paru='yay'
+
+alias ff='fastfetch'
+alias negro='yay -Syu'
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='trash -v'
+alias gedit='gnome-text-editor >/dev/null 2>&1'
+alias cls='clear'
+
+alias home='cd ~'
+alias cd..='cd ..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
+alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+
+cd ()
+{
+	if [ -n "$1" ]; then
+		builtin cd "$@" && ls
+	else
+		builtin cd ~ && ls
+	fi
+}
+
+export PATH="$PATH:/home/thrp/.spicetify"
+export PATH="$PATH:/home/thrp/.local/bin"
+
+eval "$(zoxide init bash)"
