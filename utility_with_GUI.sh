@@ -252,19 +252,19 @@ update_environment() {
             "AMD")
                 info_msg "Installazione driver per AMD..."
                 packages=(mesa vulkan-radeon)
-                sudo cp environment/environment_amd /etc/environment  #da provare
+                sudo cp -r environment/environment_amd /etc/environment  #da provare
                 break
                 ;;
             "Intel")
                 info_msg "Installazione driver per Intel..."
                 packages=(mesa intel-media-driver vulkan-intel libvpl vpl-gpu-rt libvdpau-va-gl)
-                sudo cp environment/environment_intel /etc/environment  #da provare
+                sudo cp -r environment/environment_intel /etc/environment  #da provare
                 break
                 ;;
             "NVIDIA")
                 info_msg "Installazione driver per NVIDIA..."
                 packages=(nvidia-utils nvidia-dkms linux-lts-headers egl-wayland nvidia-vaapi-driver)
-                sudo cp environment/environment_nvidia /etc/environment  #da provare
+                sudo cp -r environment/environment_nvidia /etc/environment  #da provare
                 break
                 ;;
             *)
